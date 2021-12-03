@@ -10,6 +10,8 @@
 //     })
 // });
 
+
+
 // Модальное окно
 $(function () {
   $("#callback-button").click(function (e) {
@@ -57,11 +59,11 @@ document.addEventListener("DOMContentLoaded", function () {
         alert(result.message);
         form.classList.remove("_sending");
         //чистим форму
-        formPreview.innerHTML = "";
+        formPreview.innerHTML = '';
         form.reset();
         form.classList.remove("_sending");
       } else {
-        alert("Отлично, форма отправлена");
+        alert("Ошибка");
         form.classList.remove("_sending");
       }
     } else {
@@ -109,6 +111,10 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+
+
+
+
 // младшая форма
 
 // $(document).ready(function(){
@@ -117,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
 //      $.post($(this).attr('action'), $(this).serialize(), function(response){
 //            // do something here on success
 //            alert("Почта отправлена");
-
+           
 //      },'json');
 //      return false;
 //   });
@@ -131,6 +137,8 @@ document.addEventListener("DOMContentLoaded", function () {
 //   return false;
 // });
 
-document.getElementById("button1").onclick = function () {
-  alert("Почта отправлена");
-};
+
+document.getElementById('button1').onclick = function(){
+  alert('Почта отправлена');
+}
+
